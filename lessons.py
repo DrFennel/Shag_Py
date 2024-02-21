@@ -133,6 +133,7 @@ print(*s_list)
 
 s_list.copy
 
+copy_list = s_list[:]    ## самое надежное копирование
 
 coppy_list = s_list.copy()
 print(coppy_list)
@@ -147,6 +148,47 @@ new = sam_str[-1::-1]
 print(new)
 '''
 
+#same_list = []
+
+#for i in range(10):
+#    same_list.append(i)
+
+#same_str = 'string'
+
+#same_list = [i for i in same_str]
+
+#print(same_list)
+
+#print([i for i in 'string'])
+
+#print([i for i in range(20) if i % 2 == 0 ])
+
+
+#def greeting(name,hi,time):
+#    print(f'{hi} {name} {time}')
+#greeting('1200','Vasya', hi ='hello')
+
+#def greeting(name = 'user', hi = 'Hello'):
+#    print(f'{hi} {name}')
+#greeting(name='Vasya',hi='kek')
+
+'''
+def greeting(name,time):
+    if time in range(5,12):
+        daypart = 'morning'
+    elif time in range(12,18):
+        daypart = 'day'
+    elif time in range(18,23):
+        daypart = 'evening'
+    elif time in range(0,25):
+        daypart = 'night'
+    else:
+        return print('you are stupid')
+    print(f'Good {daypart}, {name}')
+'''
+import mymodule
+
+mymodule.greeting()
 
 
 
