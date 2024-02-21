@@ -172,3 +172,6 @@ phrase = input('Input your phrase: ')
 for i in phrase[::-1]:
     print(i, end = '')
 '''
+
+# таблица умножения!!! в столбиках через вложеные списки в одну строку!!!
+
