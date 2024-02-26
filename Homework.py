@@ -173,7 +173,122 @@ for i in phrase[::-1]:
     print(i, end = '')
 '''
 
-# таблица умножения!!! в столбиках через вложеные списки в одну строку!!!
+
 
 #def greeting(name,hi,time):   5-12 12-18 18-23 23-5
+
+
+##                  Найти индексы всех вхождений в список.
+
+
+##s_list = [2,3,99,99,85,7,2,3,6,7,1,6,8,7,3,2,1,6,78,9,23,1,6,2,5,12,4,2,0,0,5,7,1,0,2,3,5,4,2,1,2,5,4,7,1]
+##some_val = int(input('Enter num: '))
+##index = -1
+##ind_list = []
+##
+##while some_val in s_list[index + 1:]:
+##    index = s_list.index(some_val,index + 1)
+##    ind_list.append(index)
+##    
+##print(ind_list)
+##
+
+
+# таблица умножения!!! в столбиках через вложеные списки в одну строку!!!
+
+
+'''
+print('Multiplication table')
+ 
+for i in range(1, 11):
+    for k in range(1, 6):
+        print(f'{k:2}  * {i:2} = {(i * k):3}\t', end = '')
+    print('')
+print('')
+for i in range(1, 11):
+    for k in range(6, 11):
+        print(f'{k:2}  * {i:2} = {(i * k):3}\t', end = '')
+    print('')
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
