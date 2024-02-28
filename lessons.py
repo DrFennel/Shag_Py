@@ -186,11 +186,47 @@ def greeting(name,time):
         return print('you are stupid')
     print(f'Good {daypart}, {name}')
 '''
+'''
 import mymodule
 
 mymodule.greeting()
+'''
+
+######28.02
+'''
+def bmi(mass,hight):
+        bmi_val = mass / (hight * 2)
+        result = 'your OK'
+        if bmi_val > 29.9:
+            result = 'you fat'
+        elif bmi_val < 18.5:
+            result = 'low mass'
+        return f'your bmi = {round(bmi_val,1)} {result}'
+    
 
 
+mass = float(input('input mass: '))
+hight = float(input('input hight: ')) / 100
+             
+print(bmi(mass,hight))
+'''
+'''
+####доделать !!!!!!!!!!!!!!
+user_id = input('user:')
+pwd = input('pwd:')
+
+def greeting(user_id,pwd):
+    str_val = 'Guest'
+    user_id = user_id.lower()
+    if user_id == 'admin':
+        str_val = 'Admin'
+    elif user_id == 'user':
+        str_val = 'User'
+    return f'Hello {str_val}, {user_id.capitalise()}'
+
+
+print(greeting(user_id,pwd))
+'''
 
 
 
