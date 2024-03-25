@@ -75,7 +75,6 @@ print('Index: ', index - piece_len)
 ##print(piece_counter, 'PC', piece_check, 'PCK', piece_len, 'PL', counter, 'COUNTER')
 '''
 
-
 ##подсчитать то, сколько раз определённый символ встречается в строке
 '''
 phrase = input('Input your phrase: ')
@@ -151,7 +150,6 @@ for i in phrase:
 print(piece)
 '''
 
-
 ##проверить строку на то, что она составлена только из строчных букв
 '''
 some_str = input('Enter some string: ')
@@ -173,9 +171,7 @@ for i in phrase[::-1]:
     print(i, end = '')
 '''
 
-
-
-#def greeting(name,hi,time):   5-12 12-18 18-23 23-5
+# def greeting(name,hi,time):   5-12 12-18 18-23 23-5
 
 
 ##                  Найти индексы всех вхождений в список.
@@ -197,98 +193,91 @@ for i in phrase[::-1]:
 # таблица умножения!!! в столбиках через вложеные списки в одну строку!!!
 
 
-'''
-print('Multiplication table')
- 
-for i in range(1, 11):
-    for k in range(1, 6):
-        print(f'{k:2}  * {i:2} = {(i * k):3}\t', end = '')
-    print('')
-print('')
-for i in range(1, 11):
-    for k in range(6, 11):
-        print(f'{k:2}  * {i:2} = {(i * k):3}\t', end = '')
-    print('')
-'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# print('Multiplication table')
+#
+# for i in range(1, 11):
+#     for k in range(1, 6):
+#         print(f'{k:2}  * {i:2} = {(i * k):3}\t', end = '')
+#     print('')
+# print('')
+# for i in range(1, 11):
+#     for k in range(6, 11):
+#         print(f'{k:2}  * {i:2} = {(i * k):3}\t', end = '')
+#     print('')
+#################################
+# user_list = [['user_n1', 111], ['user_n2', 333], ['user_3', 222]]
+#
+#
+# def accaunts(users, act = 0):
+#     ''' default print "Username = user, Password = pwd".
+#      If 2nd argument = 1 return tuple in format [Username = user, Password = pwd,]'''
+#     acc_list = []
+#     for i in users:
+#         acc_list.append('Username = {0}, Password = {1}'.format(i[0],i[1]))
+#     if act == 1:
+#         return acc_list
+#     elif act == 0:
+#         print(*acc_list)
+#
+#
+# # def accaunts(users):
+# #     for i in users:
+# #         print('User = ', i[0], 'Password = ', i[1])
+#
+# help(accaunts)
+# list = accaunts(user_list,1)
+# print(*list)
+#################################
+
+# users = [['Pin',123],['Bin',456],['Guin',789]]
+#
+# def data (*args):
+#     data_list=[]
+#     for i in args:
+#         data_list.append (f'user: {i[0]},password: {i[1]}\n')
+#     return data_list
+#
+# print(*data(*users))
+
+
+#################################
+# def fact(num):
+#     print(num)
+#     if num == 0:
+#         return 1
+#     return num * fact(num - 1)
+#
+# print(fact(7))
+
+####################################
+# user_word = input('input word: ')
+# len_user_word = len(user_word)
+#
+# def palindrome(word):
+#
+#
+#
+# palindrome(user_word)
+######################################
+
+# students_name_list = []
+# marks_list = []
+# personal_mark_list = []
+# def input_data():
+#     while (last_name := input("Enter the student's last name or enter 0 to exit: ")) != 0:
+#         students_name_list.append(last_name)
+#         personal_mark_list = input("Enter the student's grades separated by a space: ")
+#         marks_list.append(list(map(int, personal_mark_list.split())))
+#
+# def average_rating():
+
+students_name_list = []
+marks_list = []
+personal_mark_list = []
+while (last_name := input("Enter the student's last name or enter 0 to exit: ")) != '0':
+     students_name_list.append(last_name)
+     personal_mark_list = input("Enter the student's grades separated by a space: ")
+     marks_list.append(list(map(int, personal_mark_list.split())))
+print(students_name_list)
+print(marks_list)
 

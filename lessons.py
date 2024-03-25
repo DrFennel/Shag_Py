@@ -82,9 +82,9 @@ else:
 
 for i in range(min_num, max_num+1, 2):
     print(i)
-''' 
+'''
 
-#СТРОКИ 7 FEB
+# СТРОКИ 7 FEB
 '''
 val = r
 print(val)
@@ -133,7 +133,6 @@ print(*s_list)
 
 s_list.copy
 
-copy_list = s_list[:]    ## самое надежное копирование
 
 coppy_list = s_list.copy()
 print(coppy_list)
@@ -148,29 +147,29 @@ new = sam_str[-1::-1]
 print(new)
 '''
 
-#same_list = []
+# same_list = []
 
-#for i in range(10):
+# for i in range(10):
 #    same_list.append(i)
 
-#same_str = 'string'
+# same_str = 'string'
 
-#same_list = [i for i in same_str]
+# same_list = [i for i in same_str]
 
-#print(same_list)
+# print(same_list)
 
-#print([i for i in 'string'])
+# print([i for i in 'string'])
 
-#print([i for i in range(20) if i % 2 == 0 ])
+# print([i for i in range(20) if i % 2 == 0 ])
 
 
-#def greeting(name,hi,time):
+# def greeting(name,hi,time):
 #    print(f'{hi} {name} {time}')
-#greeting('1200','Vasya', hi ='hello')
+# greeting('1200','Vasya', hi ='hello')
 
-#def greeting(name = 'user', hi = 'Hello'):
+# def greeting(name = 'user', hi = 'Hello'):
 #    print(f'{hi} {name}')
-#greeting(name='Vasya',hi='kek')
+# greeting(name='Vasya',hi='kek')
 
 '''
 def greeting(name,time):
@@ -202,56 +201,114 @@ def bmi(mass,hight):
         elif bmi_val < 18.5:
             result = 'low mass'
         return f'your bmi = {round(bmi_val,1)} {result}'
-    
+
 
 
 mass = float(input('input mass: '))
 hight = float(input('input hight: ')) / 100
-             
+
 print(bmi(mass,hight))
 '''
-'''
-####доделать !!!!!!!!!!!!!!
-user_id = input('user:')
-pwd = input('pwd:')
 
-def greeting(user_id,pwd):
-    str_val = 'Guest'
-    user_id = user_id.lower()
-    if user_id == 'admin':
-        str_val = 'Admin'
-    elif user_id == 'user':
-        str_val = 'User'
-    return f'Hello {str_val}, {user_id.capitalise()}'
-
-
-print(greeting(user_id,pwd))
-'''
-
+# # ####доделать !!!!!!!!!!!!!!
+# user_id = input('user:')
+# pwd = input('pwd:')
+#
+# def greeting(user_id,pwd):
+#     str_val = 'Guest'
+#     user_id = user_id.lower()
+#     if user_id == 'admin':
+#         str_val = 'Admin'
+#     elif user_id == 'user':
+#         str_val = 'User'
+#     return f'Hello {str_val}, {user_id.capitalize()}'
+#
+#
+# print(greeting(user_id,pwd))
 
 
+# def averege_arif(*args):
+#     sum_num = 0
+#     counter = 0
+#     for i in args:
+#         sum_num += int(i)
+#         counter += 1
+#     return sum_num / counter
+# # print(averege_arif(99, 71, 53, 7, 101))
+# averge_mark = averege_arif
+# print(type(averege_arif))
+# print(averge_mark(7,4,2,6,7))
+
+# users = [['user_n1', 111],['user_n2',333],['user_3',222]]
+# def accaunt()
+
+# доделать 2 функции.
+# customers = ['AdminFedya','AdminVasya','guest', 'student_09']
+# def say_hell(castomer):
+#     if castomer.find('admin') != -1:
+#         return 'Hello Admin'
+#     if castomer.find('')
 
 
+# def tri_recursion(k):
+#   if(k > 0):
+#     result = k + tri_recursion(k - 1)
+#     print(result)
+#   else:
+#     result = 0
+#   return result
+#
+# print("\n\nRecursion Example Results")
+# tri_recursion(6)
+
+#######################
+
+# def my_greeting1():
+#     print('Hello! Have a good morning!')
+#
+# say_good_morning = my_greeting1
+#
+# say_good_morning()
+#
+# def my_greeting2():
+#     print('Hello! Have a good day!')
+#
+# def my_greeting3():
+#     print('Hello! Have a good evening!')
+# def my_greeting4():
+#     print('Hello! Have a good night!')
+#
+# my_greeting_list = [my_greeting1, my_greeting2, my_greeting3, my_greeting4]
+#
+# for my_greenting in my_greeting_list:
+#     my_greenting()
+#
+# def greeting_recipient(greeting_fune):
+#     greeting_recip = input('Input your name: ')
+#     print('Deer,', greeting_recip, '!')
+#     greeting_fune()
+#
+# for my_greenting in my_greeting_list:
+#     greeting_recipient(my_greenting)
+#
+# def check_time_day():
+#     while True:
+#         timeOfDay = input("Input time of day (M-morning;D-afternoon;E- everning;N-night):")
+#         if timeOfDay == "M":
+#              return my_greeting_list[0]
+#         elif timeOfDay == "D":
+#              return my_greeting_list[1]
+#         elif timeOfDay == "E":
+#             return my_greeting_list[2]
+#         elif timeOfDay == "N":
+#             return my_greeting_list[3]
+#         else:
+#             print("Wrong input!")
 
 
+def sum_two_number(x, y):
+    return x + y
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+ans = list(map(sum_two_number, {1, 2, 3}, [1, 90]))
+print(ans)
