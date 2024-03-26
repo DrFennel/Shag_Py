@@ -274,10 +274,53 @@ for i in phrase[::-1]:
 students_name_list = []
 marks_list = []
 personal_mark_list = []
-while (last_name := input("Enter the student's last name or enter 0 to exit: ")) != '0':
-     students_name_list.append(last_name)
-     personal_mark_list = input("Enter the student's grades separated by a space: ")
-     marks_list.append(list(map(int, personal_mark_list.split())))
-print(students_name_list)
-print(marks_list)
+averege_list = []
+pass_cond_students_list = []
+#
+# while (last_name := input("Enter the student's last name or enter 0 to exit: ")) != '0':
+#      students_name_list.append(last_name)
+#      personal_mark_list = input("Enter the student's grades separated by a space: ")
+#      marks_list.append(list(map(float, personal_mark_list.split())))
+# print(students_name_list)
+# print(marks_list)
+# for i in marks_list:
+#      for k in i:
+#           mark_sum, counter = 0, 0
+#           mark_sum += k
+#           counter += 1
+#      averege_list.append(round((mark_sum/counter), 1))
+# print(averege_list)
+# counter = 0
+# for i in averege_list:
+#      counter += 1
+#      if i > 59.9:
+#           pass_cond_students_list.append(f'{students_name_list[counter]} : {i}\n')
+#
+# print(*pass_cond_students_list)
 
+def data_input():
+     while (last_name := input("Enter the student's last name or enter 0 to exit: ")) != '0':
+          students_name_list.append(last_name)
+          personal_mark_list = input("Enter the student's grades separated by a space: ")
+          marks_list.append(list(map(float, personal_mark_list.split())))
+def averege(number_list):
+     mark_sum, counter = 0, 0
+     for i in number_list:
+          for k in i:
+               mark_sum += k
+               counter += 1
+          averege_list.append(round((mark_sum/counter), 1))
+     print(averege_list)
+def pass_cond_stud():
+     counter = 0
+     for i in averege_list:
+          counter += 1
+          if i > 59.9:
+               pass_cond_students_list.append(f'{students_name_list[counter]} : {i}\n')
+
+
+marks_list = [[90.0, 66.0, 60.0, 59.9, 0], [90.0, 66.0, 60.0, 59.9, 1], [90.0, 66.0, 60.0, 59.9, 50.0]]
+# data_input()
+averege(marks_list)
+# pass_cond_stud()
+# print(*pass_cond_students_list)
