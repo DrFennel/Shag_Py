@@ -318,9 +318,7 @@ def pass_cond_stud():
           if i > 59.9:
                pass_cond_students_list.append(f'{students_name_list[counter]} : {i}\n')
 
-
-marks_list = [[90.0, 66.0, 60.0, 59.9, 0], [90.0, 66.0, 60.0, 59.9, 1], [90.0, 66.0, 60.0, 59.9, 50.0]]
-# data_input()
+data_input()
 averege(marks_list)
-# pass_cond_stud()
-# print(*pass_cond_students_list)
+pass_cond_stud()
+print(*pass_cond_students_list)
