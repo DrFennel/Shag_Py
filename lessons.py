@@ -305,3 +305,108 @@ print(bmi(mass,hight))
 #         else:
 #             print("Wrong input!")
 
+##########################
+
+# num_list = [9, 71, 82, -5, 0]
+# new_num_list = []
+# for i in num_list:
+#     new_num = lambda x: x + 10
+#     new_num_list.append(new_num(i))
+# print(new_num_list)
+
+# num_list = [9, 71, 82, -5, 0]
+# new_num_list = []
+# for i in num_list:
+#     # new_num = lambda x: x + 10
+#     new_num_list.append(((lambda x: x+10)(i)))
+# print(new_num_list)
+###############################
+
+# def fact(num):
+#     print(num)
+#     if num == 0:
+#         return 1
+#     return num * fact(num - 1)
+#
+# test = fact
+#
+# print(test(4))
+
+#################################
+# print([i for i in (lambda x: x+10)])
+
+# print([i for i in range(20) if i % 2 == 0 ])
+
+# students = [['vasia', 70],['masha', 90], ['fedia',60]]
+# sort_stu = sorted(students, key= lambda x:x[1])
+# print(sort_stu)
+
+##################################
+# new_num = [1, -5, -7, 9, 0]
+# sort_stu = sorted(new_num, key= lambda x: abs(x))  ### key= abs
+# print(sort_stu)
+
+##################################
+
+def simp_dec(my_func):
+    print('Hi i am Decorator!')
+    def simp_wrapper():
+        print('Func work!')
+        my_func()
+        print('End work.')
+    return simp_wrapper
+
+
+
+# say_hi_advenced = simp_dec(say_hi)
+# say_hi_advenced()
+
+# @simp_dec
+# def say_hi():
+#     print('Hi!')
+# say_hi()
+def simp_dec_v2(my_func):
+    print('Hi i second Decorator!')
+    def simp_wrapper():
+        print('lets start')
+        my_func()
+        print('Good luck')
+    return simp_wrapper
+
+@simp_dec
+@simp_dec_v2
+def say_hi():
+    print('Hi!!!')
+say_hi()
+
+def simpleDecorator_v3(myFunction):
+    print("Hello! I'm Third Decorator!")
+    def simpleWrapper():
+        print("Function starts working...")
+        resutl=myFunction()
+        print("See you!")
+        return resutl
+    return simpleWrapper
+def calculateSum():
+    print("Welcome! Let's calculate...")
+    x=int(input("x: "))
+    y=int(input("y: "))
+    return x+y
+calculateSum= simpleDecorator_v3(calculateSum)
+print(calculateSum())
+
+def simpleDecorator_v4(myFunction):
+    print("Hello! I'm Fourth Decorator!")
+    def simpleWrapper(argX, argY):
+        print("I've got {}, {}. Function starts working...". format(argX, argY))
+        resutl=myFunction(argX, argY)
+        print("See you!")
+        return resutl
+    return simpleWrapper
+def calculateSum_v1(a,b):
+    print("Welcome! Let's calculate...")
+    x=int(input("x: "))
+    y=int(input("y: "))
+    return x+y+a+b
+calculateSum_v1= simpleDecorator_v4(calculateSum_v1)
+print(calculateSum_v1(3,4))
